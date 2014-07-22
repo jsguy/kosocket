@@ -1,0 +1,8 @@
+{
+  "name": "kosocket",
+  "version": "0.3.7",
+  "description": "Knockoutjs socket.io remote binding",
+  "dependencies": {
+    "socket.io": "1.0.2"
+  }
+}

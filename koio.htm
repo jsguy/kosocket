@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Socket.IO KO remoteValue test</title>
+	</head>
+	<body>
+
+		<input type="text" name="name" value="testamaroo" data-bind="remoteValue: name"/>
+		<input type="text" name="email" data-bind="remoteValue: email"/>
+
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="jquery-1.11.1.js"></script>
+		<script src="/knockout.js"></script>
+		<script src="http://localhost/projects/kotools/kotools.js"></script>
+
+		<script>
+			var VM = function(){
+				var self = this;
+				self.name = ko.observable();
+				self.email = ko.observable();
+			};
+
+			vm = new VM();
+
+			ko.applyBindings(vm);
+		</script>
+	</body>
+</html>
